@@ -73,7 +73,7 @@ export default async function (tree: Tree, options: FeatureOptions) {
   const featureImportPath = `${workspaceName}/${domainNameAndDirectory}/${featureFolderName}`;
   const featureIndexPath = `${domainNameAndDirectoryPath}/${featureDirectoryAndFolderName}/src/index.ts`;
   const entityName = options.entity ? strings.dasherize(options.entity) : '';
-  const featureComponentImportPath = `./${featureDirectoryAndNameDasherized}.component`;
+  const featureComponentImportPath = `./${featureName}.component`;
   const featureComponentClassName = strings.classify(
     `${featureDirectoryAndNameDasherized}Component`
   );
